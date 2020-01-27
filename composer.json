@@ -1,0 +1,35 @@
+{
+    "name": "lakuapik/php-helper-id",
+    "description": "Kumpulan fungsi bantuan PHP yang digunakan secara umum di Indonesia.",
+    "version": "0.0.1",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/lakuapik/php-helper-id",
+    "keywords": ["php", "php helper", "php indonesia", "fungsi php indonesia"],
+    "authors": [
+        {
+            "name": "David Adi Nugroho",
+            "email": "davidadi216@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lakuapik\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
