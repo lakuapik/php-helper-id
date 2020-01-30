@@ -6,5 +6,5 @@ dan proyek ini menganut [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [0.0.1] - TBD
 ### Added
-- function `ribuan`, `romawi`, `rupiah`, `terbilang`
-- test `ribuan`, `romawi`, `rupiah`, `terbilang`
+- function `ribuan`, `re_ribuan`, `romawi`, `rupiah`, `terbilang`
+- test `ribuan`, `re_ribuan`, `romawi`, `rupiah`, `terbilang`

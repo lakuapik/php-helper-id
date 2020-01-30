@@ -5,6 +5,7 @@ Kumpulan fungsi bantuan PHP yang digunakan secara umum di Indonesia.
 
 ## Fungsi
 * ribuan
+* re_ribuan
 * romawi
 * rupiah
 * terbilang
