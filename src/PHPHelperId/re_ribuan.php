@@ -9,8 +9,8 @@ if (!function_exists('re_ribuan')) {
      * 8.923.456 => 8923456
      * 28.495,24 => 28495.24
      *
-     * @param string     $ribuan
-     * @param int        $desimal jumlah desimal dibelakang koma
+     * @param string $ribuan
+     * @param int    $desimal jumlah desimal dibelakang koma
      *
      * @return int|float
      */

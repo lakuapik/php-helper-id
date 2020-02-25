@@ -2,14 +2,14 @@
 
 if (!function_exists('romawi')) {
     /**
-     * Ubah angka biasa menjadi angka romawi.
+     * Ubah angka menjadi format romawi.
      *
      * Contoh:
      * 8 => VIII
      * 1234 => MCCXXXIV
      *
      * @param int|string $angka
-     * @param boolean $kapital
+     * @param boolean    $kapital
      *
      * @return string
      */
