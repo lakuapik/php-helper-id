@@ -25,6 +25,5 @@ class ReRupiahTest extends TestCase
             212.2,
             re_rupiah('Rp. 212,20', 2)
         );
-
     }
 }

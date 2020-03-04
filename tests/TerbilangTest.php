@@ -205,6 +205,5 @@ class TerbilangTest extends TestCase
             terbilang(-1970.11),
             'minus seribu sembilan ratus tujuh puluh koma sebelas'
         );
-
     }
 }

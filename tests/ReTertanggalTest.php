@@ -33,7 +33,7 @@ class ReTertanggalTest extends TestCase
 
         $this->assertInstanceOf(
             get_class(re_tertanggal('tanggal tiga januari bulan agustus tahun dua ribu', '', true)),
-            (new DateTime()),
+            (new DateTime())
         );
 
         $this->assertEquals(
