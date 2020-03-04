@@ -7,6 +7,7 @@ if (!function_exists('terbilang')) {
      * Contoh:
      * 17 => tujuh belas
      * 1230000 => satu juta dua ratus tiga puluh ribu
+     * -123 => minus seratus dua puluh tiga
      *
      * @param int|string $angka
      *
@@ -36,6 +37,11 @@ if (!function_exists('terbilang')) {
         $i = 0;
         $hasil = '';
 
+        if ($n < 0) {
+            $hasil = 'minus ' . $hasil;
+            $n = abs($n);
+        }
+
         while ($n != 0) {
             $hasilBagi = intval($n / $basis[$i]);
 
@@ -52,6 +58,11 @@ if (!function_exists('terbilang')) {
         $hasil = preg_replace('/satu puluh (\w+)/i', '\1 belas', $hasil);
         $hasil = preg_replace('/satu (ribu|ratus|puluh|belas)/', 'se\1', $hasil);
         $hasil = preg_replace('/\s{2,}/', ' ', trim($hasil));
+
+        preg_match('/[\.](.*[\d]?)/', abs($angka), $koma);
+        if (count($koma) > 1) {
+            $hasil .= ' koma ' . terbilang($koma[1]);
+        }
 
         return $hasil;
     }
