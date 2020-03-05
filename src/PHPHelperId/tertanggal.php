@@ -14,10 +14,10 @@ if (!function_exists('tertanggal')) {
      */
     function tertanggal($tanggal)
     {
-        setlocale(LC_TIME, 'id', 'id_ID');
+        setlocale(LC_TIME, 'id_ID.utf8', 'id_ID.UTF-8', 'id_ID', 'id');
 
         $tanggal = preg_replace('/januari/i', 'jan', $tanggal);
-        $tanggal = preg_replace('/febuari|februari/i', 'feb', $tanggal);
+        $tanggal = preg_replace('/febuari|februari|pebruari/i', 'feb', $tanggal);
         $tanggal = preg_replace('/maret/i', 'mar', $tanggal);
         $tanggal = preg_replace('/april/i', 'apr', $tanggal);
         $tanggal = preg_replace('/mei/i', 'may', $tanggal);
@@ -32,6 +32,10 @@ if (!function_exists('tertanggal')) {
         $hasil = 'tanggal ' . terbilang($d->format('d'));
         $hasil .= ' bulan ' . strftime('%B', $d->getTimestamp());
         $hasil .= ' tahun ' . terbilang($d->format('Y'));
+
+        // bentuk bakunya ada februari, bukan pebruari
+        // https://kbbi.kemdikbud.go.id/entri/februari
+        $hasil = preg_replace('/pebruari/', 'februari', $hasil);
 
         return strtolower($hasil);
     }

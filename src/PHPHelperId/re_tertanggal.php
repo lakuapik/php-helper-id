@@ -17,13 +17,13 @@ if (!function_exists('re_tertanggal')) {
      *
      * @return string|\DateTime
      */
-    function re_tertanggal($tertanggal, $format = '%Y-%m-%d', $asDate = false, $locale = 'id_ID')
+    function re_tertanggal($tertanggal, $format = '%Y-%m-%d', $asDate = false, $locale = 'id_ID.utf8')
     {
-        setlocale(LC_TIME, $locale, 'id');
+        setlocale(LC_TIME, $locale, 'id_ID.UTF-8', 'id_ID', 'id');
 
         $tg = strtolower(trim($tertanggal));
         $tg = preg_replace('/januari/i', 1, $tg);
-        $tg = preg_replace('/febuari|februari/i', 2, $tg);
+        $tg = preg_replace('/febuari|februari|pebuari|pebruari/i', 2, $tg);
         $tg = preg_replace('/maret/i', 3, $tg);
         $tg = preg_replace('/april/i', 4, $tg);
         $tg = preg_replace('/mei/i', 5, $tg);
