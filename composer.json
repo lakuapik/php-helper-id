@@ -1,7 +1,7 @@
 {
     "name": "lakuapik/php-helper-id",
     "description": "Kumpulan fungsi bantuan PHP yang digunakan secara umum di Indonesia.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/lakuapik/php-helper-id",
