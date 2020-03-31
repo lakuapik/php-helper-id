@@ -38,7 +38,7 @@ class ReTertanggalTest extends TestCase
 
         $this->assertEquals(
             '01 June 2100',
-            re_tertanggal('tanggal satu bulan juni tahun dua ribu seratus', '%d %B %Y', false, 'en_US')
+            re_tertanggal('tanggal satu bulan juni tahun dua ribu seratus', '%d %B %Y', false, 'en_US.utf8')
         );
     }
 }
