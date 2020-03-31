@@ -7,213 +7,213 @@ class ReTerbilangTest extends TestCase
     public function test()
     {
         $this->assertEquals(
-            re_terbilang('nol'),
-            0
+            0,
+            re_terbilang('nol')
         );
 
         $this->assertEquals(
-            re_terbilang('satu'),
-            1
+            1,
+            re_terbilang('satu')
         );
 
         $this->assertEquals(
-            re_terbilang('dua'),
-            2
+            2,
+            re_terbilang('dua')
         );
 
         $this->assertEquals(
-            re_terbilang('tiga'),
-            3
+            3,
+            re_terbilang('tiga')
         );
 
         $this->assertEquals(
-            re_terbilang('empat'),
-            4
+            4,
+            re_terbilang('empat')
         );
 
         $this->assertEquals(
-            re_terbilang('lima'),
-            5
+            5,
+            re_terbilang('lima')
         );
 
         $this->assertEquals(
-            re_terbilang('enam'),
-            6
+            6,
+            re_terbilang('enam')
         );
 
         $this->assertEquals(
-            re_terbilang('tujuh'),
-            7
+            7,
+            re_terbilang('tujuh')
         );
 
         $this->assertEquals(
-            re_terbilang('delapan'),
-            8
+            8,
+            re_terbilang('delapan')
         );
 
         $this->assertEquals(
-            re_terbilang('sembilan'),
-            9
+            9,
+            re_terbilang('sembilan')
         );
 
         $this->assertEquals(
-            re_terbilang('sepuluh'),
-            10
+            10,
+            re_terbilang('sepuluh')
         );
 
         $this->assertEquals(
-            re_terbilang('sebelas'),
-            11
+            11,
+            re_terbilang('sebelas')
         );
 
         $this->assertEquals(
-            re_terbilang('dua belas'),
-            12
+            12,
+            re_terbilang('dua belas')
         );
 
         $this->assertEquals(
-            re_terbilang('tiga belas'),
-            13
+            13,
+            re_terbilang('tiga belas')
         );
 
         $this->assertEquals(
-            re_terbilang('empat belas'),
-            14
+            14,
+            re_terbilang('empat belas')
         );
 
         $this->assertEquals(
-            re_terbilang('lima belas'),
-            15
+            15,
+            re_terbilang('lima belas')
         );
 
         $this->assertEquals(
-            re_terbilang('enam belas'),
-            16
+            16,
+            re_terbilang('enam belas')
         );
 
         $this->assertEquals(
-            re_terbilang('tujuh belas'),
-            17
+            17,
+            re_terbilang('tujuh belas')
         );
 
         $this->assertEquals(
-            re_terbilang('delapan belas'),
-            18
+            18,
+            re_terbilang('delapan belas')
         );
 
         $this->assertEquals(
-            re_terbilang('sembilan belas'),
-            19
+            19,
+            re_terbilang('sembilan belas')
         );
 
         $this->assertEquals(
-            re_terbilang('dua puluh'),
-            20
+            20,
+            re_terbilang('dua puluh')
         );
 
         $this->assertEquals(
-            re_terbilang('empat puluh dua'),
-            42
+            42,
+            re_terbilang('empat puluh dua')
         );
 
         $this->assertEquals(
-            re_terbilang('sembilan puluh sembilan'),
-            99
+            99,
+            re_terbilang('sembilan puluh sembilan')
         );
 
         $this->assertEquals(
-            re_terbilang('seratus'),
-            100
+            100,
+            re_terbilang('seratus')
         );
 
         $this->assertEquals(
-            re_terbilang('seratus dua puluh satu'),
-            121
+            121,
+            re_terbilang('seratus dua puluh satu')
         );
 
         $this->assertEquals(
-            re_terbilang('lima ratus empat'),
-            504
+            504,
+            re_terbilang('lima ratus empat')
         );
 
         $this->assertEquals(
-            re_terbilang('lima ratus lima puluh empat'),
-            554
+            554,
+            re_terbilang('lima ratus lima puluh empat')
         );
 
         $this->assertEquals(
-            re_terbilang('seribu'),
-            1000
+            1000,
+            re_terbilang('seribu')
         );
 
         $this->assertEquals(
-            re_terbilang('dua puluh ribu'),
-            20000
+            20000,
+            re_terbilang('dua puluh ribu')
         );
 
         $this->assertEquals(
-            re_terbilang('satu juta'),
-            1000000
+            1000000,
+            re_terbilang('satu juta')
         );
 
         $this->assertEquals(
-            re_terbilang('satu juta dua ratus tiga puluh empat ribu lima ratus enam puluh tujuh'),
-            1234567
+            1234567,
+            re_terbilang('satu juta dua ratus tiga puluh empat ribu lima ratus enam puluh tujuh')
         );
 
         $this->assertEquals(
-            re_terbilang('sepuluh juta'),
-            10000000
+            10000000,
+            re_terbilang('sepuluh juta')
         );
 
         $this->assertEquals(
-            re_terbilang('seratus juta'),
-            100000000
+            100000000,
+            re_terbilang('seratus juta')
         );
 
         $this->assertEquals(
-            re_terbilang('satu milyar'),
-            1000000000
+            1000000000,
+            re_terbilang('satu milyar')
         );
 
         $this->assertEquals(
-            re_terbilang('satu triliun'),
-            1000000000000
+            1000000000000,
+            re_terbilang('satu triliun')
         );
 
         $this->assertEquals(
-            re_terbilang('satu kuadriliun'),
-            1000000000000000
+            1000000000000000,
+            re_terbilang('satu kuadriliun')
         );
 
         $this->assertEquals(
-            re_terbilang('sembilan ratus sembilan puluh sembilan triliun sembilan ratus sembilan puluh sembilan milyar sembilan ratus sembilan puluh sembilan juta sembilan ratus sembilan puluh sembilan ribu sembilan ratus sembilan puluh sembilan'),
-            999999999999999
+            999999999999999,
+            re_terbilang('sembilan ratus sembilan puluh sembilan triliun sembilan ratus sembilan puluh sembilan milyar sembilan ratus sembilan puluh sembilan juta sembilan ratus sembilan puluh sembilan ribu sembilan ratus sembilan puluh sembilan')
         );
 
         $this->assertEquals(
-            re_terbilang('minus satu juta'),
-            -1000000
+            -1000000,
+            re_terbilang('minus satu juta')
         );
 
         $this->assertEquals(
-            re_terbilang('minus seratus dua puluh tiga'),
-            -123
+            -123,
+            re_terbilang('minus seratus dua puluh tiga')
         );
 
         $this->assertEquals(
-            re_terbilang('dua ratus empat puluh lima koma dua puluh empat'),
-            245.24
+            245.24,
+            re_terbilang('dua ratus empat puluh lima koma dua puluh empat')
         );
 
         $this->assertEquals(
-            re_terbilang('minus seribu sembilan ratus tujuh puluh koma sebelas'),
-            -1970.11
+            -1970.11,
+            re_terbilang('minus seribu sembilan ratus tujuh puluh koma sebelas')
         );
 
         $this->assertEquals(
-            re_terbilang('sembilan ribu tiga koma tiga ratus tujuh', 1),
-            9003.3
+            9003.3,
+            re_terbilang('sembilan ribu tiga koma tiga ratus tujuh', 1)
         );
     }
 }

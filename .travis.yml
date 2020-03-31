@@ -5,7 +5,7 @@ addons:
       - locales
       - language-pack-id
 php:
-  # - 5.6
+  - 5.6
   - 7.0
 before_script:
   - "locale -a | grep id"

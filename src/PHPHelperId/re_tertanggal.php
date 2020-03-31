@@ -23,7 +23,7 @@ if (!function_exists('re_tertanggal')) {
 
         $tg = strtolower(trim($tertanggal));
         $tg = preg_replace('/januari/i', 1, $tg);
-        $tg = preg_replace('/febuari|februari|pebuari|pebruari/i', 2, $tg);
+        $tg = preg_replace('/februari|febuari|pebruari|pebuari|peb/i', 2, $tg);
         $tg = preg_replace('/maret/i', 3, $tg);
         $tg = preg_replace('/april/i', 4, $tg);
         $tg = preg_replace('/mei/i', 5, $tg);
@@ -51,6 +51,16 @@ if (!function_exists('re_tertanggal')) {
         }
 
         $hasil = strftime($format, (new DateTime($ymd))->getTimestamp());
+
+        // bentuk bakunya ada februari, bukan pebruari
+        // https://kbbi.kemdikbud.go.id/entri/februari
+        $pPattern = '/(p)(ebruari|ebuari|eb)/i';
+        preg_match($pPattern, $hasil, $pMatch);
+        if (count($pMatch) > 0) {
+            $pStart = ctype_upper($pMatch[1]) ? 'F' : 'f';
+            $pEnd = $pMatch[2] == 'eb' ? 'eb' : 'ebruari';
+            $hasil = preg_replace($pPattern, $pStart.$pEnd, $hasil);
+        }
 
         return trim($hasil);
     }

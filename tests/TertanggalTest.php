@@ -7,33 +7,33 @@ class TertanggalTest extends TestCase
     public function test()
     {
         $this->assertEquals(
-            tertanggal('2019-01-01'),
-            'tanggal satu bulan januari tahun dua ribu sembilan belas'
+            'tanggal satu bulan januari tahun dua ribu sembilan belas',
+            tertanggal('2019-01-01')
         );
 
         $this->assertEquals(
-            tertanggal('23 Feb 2016'),
-            'tanggal dua puluh tiga bulan februari tahun dua ribu enam belas'
+            'tanggal dua puluh tiga bulan februari tahun dua ribu enam belas',
+            tertanggal('23 Feb 2016')
         );
 
         $this->assertEquals(
-            tertanggal('1945/08/17'),
-            'tanggal tujuh belas bulan agustus tahun seribu sembilan ratus empat puluh lima'
+            'tanggal tujuh belas bulan agustus tahun seribu sembilan ratus empat puluh lima',
+            tertanggal('1945/08/17')
         );
 
         $this->assertEquals(
-            tertanggal('2 Mei 2000'),
-            'tanggal dua bulan mei tahun dua ribu'
+            'tanggal dua bulan mei tahun dua ribu',
+            tertanggal('2 Mei 2000')
         );
 
         $this->assertEquals(
-            tertanggal('24 Okt 1800'),
-            'tanggal dua puluh empat bulan oktober tahun seribu delapan ratus'
+            'tanggal dua puluh empat bulan oktober tahun seribu delapan ratus',
+            tertanggal('24 Okt 1800')
         );
 
         $this->assertEquals(
-            tertanggal('1 June 2100'),
-            'tanggal satu bulan juni tahun dua ribu seratus'
+            'tanggal satu bulan juni tahun dua ribu seratus',
+            tertanggal('1 June 2100')
         );
     }
 }
