@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('terbilang')) {
+if (! function_exists('terbilang')) {
     /**
      * Ubah angka menjadi kalimat terbilang.
      *
@@ -23,15 +23,15 @@ if (!function_exists('terbilang')) {
 
         $bilangan = [
             'nol', 'satu', 'dua', 'tiga', 'empat', 'lima',
-            'enam', 'tujuh', 'delapan', 'sembilan'
+            'enam', 'tujuh', 'delapan', 'sembilan',
         ];
         $basis = [
             1000000000000000, 1000000000000, 1000000000000,
-            1000000000, 1000000, 1000, 100, 10, 1
+            1000000000, 1000000, 1000, 100, 10, 1,
         ];
         $unit = [
             'kuadriliun', 'triliun', 'biliun', 'milyar',
-            'juta', 'ribu', 'ratus', 'puluh', ''
+            'juta', 'ribu', 'ratus', 'puluh', '',
         ];
 
         $i = 0;

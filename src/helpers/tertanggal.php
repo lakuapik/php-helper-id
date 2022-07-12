@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('tertanggal')) {
+if (! function_exists('tertanggal')) {
     /**
      * Ubah tanggal menjadi kalimat tertanggal.
      *

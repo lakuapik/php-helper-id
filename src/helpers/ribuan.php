@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('ribuan')) {
+if (! function_exists('ribuan')) {
     /**
      * Ubah angka menjadi format ribuan.
      *

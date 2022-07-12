@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('re_tertanggal')) {
+if (! function_exists('re_tertanggal')) {
     /**
      * Ubah angka dari format tertanggal ke tanggal biasa sesuai format yang diberikan.
      *
@@ -38,7 +38,7 @@ if (!function_exists('re_tertanggal')) {
         $tg3 = preg_match('/(\d+)/', $tg, $bulan);
 
         $tanggal = preg_replace('/tanggal/', '', @$tg2[0]);
-        $tahun   = preg_replace('/tahun/', '', @$tg2[1]);
+        $tahun = preg_replace('/tahun/', '', @$tg2[1]);
 
         $ymd = implode('-', [
             re_terbilang($tahun),

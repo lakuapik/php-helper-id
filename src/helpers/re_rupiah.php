@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('re_rupiah')) {
+if (! function_exists('re_rupiah')) {
     /**
      * Ubah angka dari format rupiah ke angka biasa.
      *

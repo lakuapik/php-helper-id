@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('re_ribuan')) {
+if (! function_exists('re_ribuan')) {
     /**
      * Ubah angka dari format ribuan ke angka biasa.
      *
@@ -26,7 +26,7 @@ if (!function_exists('re_ribuan')) {
         $r3 = (int) str_replace('.', '', @$r2[0]);
 
         if ($desimal > 0) {
-            $r3 += round(@$r2[1]/pow(10, strlen(@$r2[1])), $desimal);
+            $r3 += round(@$r2[1] / pow(10, strlen(@$r2[1])), $desimal);
         }
 
         return $desimal > 0 ? floatval($r3) : intval($r3);

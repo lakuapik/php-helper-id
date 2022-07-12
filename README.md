@@ -1,8 +1,8 @@
 # php-helper-id
 
-[![Build Status](https://travis-ci.com/lakuapik/php-helper-id.svg?branch=master)](https://travis-ci.com/lakuapik/php-helper-id)
-[![Latest Stable Version](https://poser.pugx.org/lakuapik/php-helper-id/v/stable)](https://packagist.org/packages/lakuapik/php-helper-id)
-[![License](https://poser.pugx.org/lakuapik/php-helper-id/license)](https://packagist.org/packages/lakuapik/php-helper-id)
+![Version](https://img.shields.io/packagist/v/lakuapik/php-helper-id)
+![Downloads](https://img.shields.io/packagist/dt/lakuapik/php-helper-id)
+![License](https://img.shields.io/packagist/l/lakuapik/php-helper-id)
 
 Kumpulan fungsi bantuan PHP yang digunakan secara umum di Indonesia.
 

@@ -1,35 +1,38 @@
 {
-    "name": "lakuapik/php-helper-id",
-    "description": "Kumpulan fungsi bantuan PHP yang digunakan secara umum di Indonesia.",
-    "version": "1.0.0",
-    "type": "library",
-    "license": "MIT",
-    "homepage": "https://github.com/lakuapik/php-helper-id",
-    "keywords": ["php", "php helper", "php indonesia", "fungsi php indonesia"],
-    "authors": [
-        {
-            "name": "David Adi Nugroho",
-            "email": "davidadi216@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-        "php": ">=5.6"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Lakuapik\\": "src/"
-        },
-        "files": [
-            "src/functions.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
+  "name": "lakuapik/php-helper-id",
+  "description": "Kumpulan fungsi bantuan PHP yang digunakan secara umum di Indonesia.",
+  "keywords": [
+    "php",
+    "php helper",
+    "php indonesia",
+    "fungsi php indonesia"
+  ],
+  "homepage": "https://github.com/lakuapik/php-helper-id",
+  "license": "MIT",
+  "require": {
+    "php": "^5.6|^7.0|^8.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3",
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "scripts": {
+    "lint": "php-cs-fixer fix --allow-risky=yes",
+    "test": "phpunit --stop-on-failure"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
     }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
